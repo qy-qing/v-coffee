@@ -1,0 +1,83 @@
+.my{
+  .my-bg{
+    height: 180px;
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .upload-box{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    .van-uploader__wrapper{
+      height: 100%;
+    }
+    .van-uploader__upload{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+  }
+  .my-info{
+    margin: 0 10px;
+    position: relative;
+    top: -40px;
+    padding: 10px 10px 0 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .65) 0, rgba(255, 255, 255, 1) 90px, #fff 90px, #fff 100%);
+  }
+  .my-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ddd;
+    margin-right: 20px;
+  }
+
+  .my-info-box{
+    width: calc(~"100% - 90px");
+    height: 70px;
+  }
+
+  .user-name{
+    color: #0caaba;
+    height: 30px;
+    font-weight: bold;
+  }
+
+  .user-desc{
+    font-size: 14px;
+    color: #999;
+    height: 40px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .list-box{
+    margin-top: 50px;
+  }
+
+  /deep/ .van-cell{
+    border-bottom: 1px solid #F5F6F7;
+    padding: 15px 0;
+    &:last-child{
+      border-bottom: none;
+    }
+    &:active{
+      background-color: transparent;
+    }
+
+    span{
+      color: #646566;
+    }
+  }
+}
